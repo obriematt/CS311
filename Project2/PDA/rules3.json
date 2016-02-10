@@ -1,0 +1,17 @@
+{
+  "details": ["{a^i # b^j # c^k| i = j and i, j, k > 0}"],
+  "alphabet": ["a","b", "c"],
+  "variables": ["S", "A", "C"],
+  "rules":{
+    "S": {
+      "a": ["C","C","b","A","a"]
+    },
+    "A": {
+      "a": ["b", "A", "a"]
+    },
+    "C": {
+      "c": ["C", "c"]
+    }
+  },
+  "accepting": ["!"]
+}

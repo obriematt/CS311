@@ -1,0 +1,20 @@
+{
+  "details": ["{aa^n # b^k| s.t. there are twice as many a's as b's, and at least one b}"],
+  "alphabet": ["a","b"],
+  "variables": ["S", "A", "!"],
+  "rules":{
+    "S": {
+      "a": ["b", "A","a","a"],
+      "b": ["S"]
+    },
+    "A": {
+      "a": ["b", "A","a","a"],
+      "b": ["b"]
+    },
+    "!": {
+      "a": ["a"],
+      "b": ["b"]
+    }
+  },
+  "accepting": ["!"]
+}
